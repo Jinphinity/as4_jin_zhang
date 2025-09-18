@@ -1,0 +1,58 @@
+/* StAuth10222: I Jin Zhang, 000878821 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.item {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.itemText {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.itemMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.itemAuthor {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.itemDatetime {
+  font-style: italic;
+}
+
+.itemLink {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.itemLink:hover {
+  background-color: #1d4ed8;
+}

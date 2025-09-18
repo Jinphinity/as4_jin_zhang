@@ -1,0 +1,40 @@
+/* StAuth10222: I Jin Zhang, 000878821 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.subNav {
+  background-color: #f3f4f6;
+  min-height: 200px;
+  width: 200px;
+  padding: 1rem;
+  border-right: 2px solid #d1d5db;
+}
+
+.subNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subNavItem {
+  margin-bottom: 0.5rem;
+}
+
+.subNavLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #374151;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.subNavLink:hover {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+}
+
+.subNavLink.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}

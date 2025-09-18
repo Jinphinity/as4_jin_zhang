@@ -1,0 +1,33 @@
+/* StAuth10222: I Jin Zhang, 000878821 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  background-color: #f8fafc;
+}
+
+.footer {
+  background-color: #374151;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #6b7280;
+}
