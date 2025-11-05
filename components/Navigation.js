@@ -8,6 +8,8 @@ import styles from './Navigation.module.css';
 
 export default function Navigation() {
   const pathname = usePathname();
+  const normalizedPath =
+    pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -17,14 +19,21 @@ export default function Navigation() {
     { href: '/contact', label: 'Contact' }
   ];
 
+  const isActive = (href) => {
+    if (href === '/') {
+      return normalizedPath === '/';
+    }
+    return normalizedPath === href || normalizedPath.startsWith(`${href}/`);
+  };
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         {navItems.map((item) => (
           <li key={item.href} className={styles.navItem}>
-            <Link 
+            <Link
               href={item.href}
-              className={`${styles.navLink} ${pathname === item.href ? styles.active : ''}`}
+              className={`${styles.navLink} ${isActive(item.href) ? styles.active : ''}`}
             >
               {item.label}
             </Link>

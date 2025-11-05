@@ -33,6 +33,12 @@
   border-color: #d1d5db;
 }
 
+.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
 .subNavLink.active {
   background-color: #2563eb;
   color: white;

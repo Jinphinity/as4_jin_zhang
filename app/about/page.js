@@ -16,7 +16,7 @@ export default function About() {
           static site generation, and many other advanced features. The application demonstrates modern web 
           development practices including component-based architecture, CSS modules for styling, and dynamic routing.
         </p>
-        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+        <div className={styles.imageContainer}>
           <Image
             src="/next.svg"
             alt="Next.js Logo"
@@ -25,7 +25,7 @@ export default function About() {
             priority
           />
         </div>
-        <p style={{ marginTop: '2rem' }}>
+        <p className={styles.spacedSection}>
           The application features a responsive design, navigation highlighting, and demonstrates various 
           Next.js concepts including layouts, dynamic routes, and component composition.
         </p>

@@ -21,7 +21,7 @@ export default function ProfilePosts() {
       <p className={styles.profileText}>
         Here are all your posts and contributions. Each post links back to the detailed view in the feed section.
       </p>
-      <div style={{ marginTop: '2rem' }}>
+      <div className={styles.spacedSection}>
         {item_data.map((item) => (
           <Item
             key={item.id}

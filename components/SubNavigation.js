@@ -8,12 +8,21 @@ import styles from './SubNavigation.module.css';
 
 export default function SubNavigation() {
   const pathname = usePathname();
+  const normalizedPath =
+    pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
 
   const navItems = [
     { href: '/profile', label: 'details' },
     { href: '/profile/settings', label: 'settings' },
     { href: '/profile/posts', label: 'posts' }
   ];
+
+  const isActive = (href) => {
+    if (href === '/profile') {
+      return normalizedPath === href;
+    }
+    return normalizedPath === href || normalizedPath.startsWith(`${href}/`);
+  };
 
   return (
     <nav className={styles.subNav}>
@@ -22,7 +31,7 @@ export default function SubNavigation() {
           <li key={item.href} className={styles.subNavItem}>
             <Link 
               href={item.href}
-              className={`${styles.subNavLink} ${pathname === item.href ? styles.active : ''}`}
+              className={`${styles.subNavLink} ${isActive(item.href) ? styles.active : ''}`}
             >
               {item.label}
             </Link>
